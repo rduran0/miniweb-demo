@@ -1,0 +1,47 @@
+.linesChart{
+	margin: 0 20px 0 20px;
+}
+
+.barsChart{
+	/*Nothing yet*/
+}
+
+body{
+	font-family: Verdana;
+	background-color: #e0e0e0;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.mainContainer{
+	background-color: #fff;
+	margin: 2px;
+	padding: 3px;
+}
+
+.upperControls{
+	margin: 10px;
+	padding: 20px;
+	background-color: #e0e0f9;
+	border-style: solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	box-shadow: 5px 5px 3px #a0a0a0;
+}
+
+.lowerControls{
+	background-color: #e0e0f9;
+	margin: 10px;
+	padding: 20px;
+	border-style: solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 4px;
+	border-width: 0px;
+	box-shadow: 5px 5px 3px #a0a0a0;
+}
