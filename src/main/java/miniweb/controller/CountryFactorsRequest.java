@@ -3,6 +3,7 @@ package miniweb.controller;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,7 +17,7 @@ import miniweb.model.CountryFactors;
 @RestController
 public class CountryFactorsRequest {
 	
-	@RequestMapping(value = "/country/{id}/factors", method = RequestMethod.GET)
+	@GetMapping(value = "/country/{id}/factors")
 	public CountryFactors obtainCountryFactors(@PathVariable("id") String countryCode) {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mysql.xml");
@@ -27,7 +28,7 @@ public class CountryFactorsRequest {
 		return template.getCountryFactors(countryCode);
 	}
 	
-	@RequestMapping(value = "/country/{id}/factors/time", method = RequestMethod.GET)
+	@GetMapping(value = "/country/{id}/factors/time")
 	public CountryFactorTime obtainFactorsOverTime(@PathVariable("id") String countryCode) {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mysql.xml");
